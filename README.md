@@ -206,13 +206,13 @@ gradlew.bat test --tests "com.kdt.nbe13151team06.orders.OrderApiControllerTest"
 
 | API | 검증 내용 | 기대 응답 | 테스트 클래스 |
 | --- | --- | --- | --- |
-| A01 | 카테고리 목록 조회, ID 오름차순 | 200 · Category[] | CategoriesApiResponse, CategoriesApi |
-| A02 | 카테고리 상세 조회 | 200 · Category | CategoriesApiResponse, CategoriesApi |
-| A05 | 메뉴가 없는 카테고리 삭제 | 204 · 빈 본문 | CategoriesApiResponse, CategoriesApi |
-| A07 | 없는 메뉴 조회 | 404 · `MENU_NOT_FOUND` | MenuApi |
-| A08 | 가격 상한 초과 메뉴 등록 | 400 · `VALIDATION_ERROR` (`fieldErrors.price`) | MenuApi |
-| A11 | 이메일 형식이 틀린 주문 접수 | 400 · `VALIDATION_ERROR` (`fieldErrors.email`) | OrderApi |
-| A11 | 같은 이메일·배송일에 다른 배송지로 접수 | 409 · `ADDRESS_MISMATCH` | OrderApi |
+| A01 | 카테고리 목록 조회, ID 오름차순 | 200 · Category[] |  CategoriesApiponseControllerTest|
+| A02 | 카테고리 상세 조회 | 200 · Category |  CategoriesApiponseControllerTest|
+| A05 | 메뉴가 없는 카테고리 삭제 | 204 · 빈 본문 | CategoriesApiponseControllerTest |
+| A07 | 없는 메뉴 조회 | 404 · `MENU_NOT_FOUND` | MenuApiContollerTest|
+| A08 | 가격 상한 초과 메뉴 등록 | 400 · `VALIDATION_ERROR` (`fieldErrors.price`) | MenuApiControllerTest|
+| A11 | 이메일 형식이 틀린 주문 접수 | 400 · `VALIDATION_ERROR` (`fieldErrors.email`) | OrderApiControllerTest|
+| A11 | 같은 이메일·배송일에 다른 배송지로 접수 | 409 · `ADDRESS_MISMATCH` | OrderApiControllerTest|
 
 
 
